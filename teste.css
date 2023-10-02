@@ -1,0 +1,23 @@
+.card {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-hidden {
+  display: none;
+}
+img {
+  width: 200px;
+}
+body {
+  background: blue;
+}

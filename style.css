@@ -1,0 +1,378 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+* {
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+.container-total{
+  max-width: 1280;
+  max-height: 1080;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background: #eee;
+    place-items: center;
+} 
+h1 {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight:500;
+  font-size:3rem;
+  color: #17115D;
+  tex-align:center;
+
+}
+.text-1 {
+
+  max-width: 1100px;
+  margin-left: 200px;
+}
+.text-1 h1{
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  align-text: center;
+ 
+}
+.decoration-span{
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+
+
+.text-1 .decoration-span2::before {
+  content: '';
+  display: inline-block;
+  width: 150px; /* Ajuste a largura conforme necessário */
+  height: 55px; /* Ajuste a altura conforme necessário */
+  background-image: url('./pinceis2.jpg');
+ border: solid 5px #F6D6FE;
+  background-size: 100%; /* Ajuste o tamanho da imagem conforme necessário */
+  margin-left: 5px; /* Ajuste a margem conforme necessário para espaçamento */
+  vertical-align: middle; /* Alinha verticalmente o ícone com o texto */
+  border-radius: 80px;
+}
+
+
+.first-h2{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #403973;
+  tex-align:center;
+
+}
+
+
+nav header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width:1280px;/* Cor de fundo do cabeçalho, opcional */
+}
+
+.left-menu {
+  flex: 1; /* Faz com que ocupe todo o espaço disponível à esquerda */
+}
+
+.right-menu{
+  display: flex;
+  gap: 10px; /* Espaçamento entre os links, opcional */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Removendo marcadores de lista */
+}
+
+a {
+  text-decoration: none; /* Removendo sublinhado padrão dos links */
+  color: #333; /* Cor do texto dos links, opcional */
+}
+
+.logo {
+  max-width: 200px;
+}
+
+
+.container-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  text-align: center;
+}
+
+.main-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+ margin: 40px;
+}
+
+/*cards*/
+.cardBox-1{
+  background: #F6D6FE;
+  border-radius: 20px;
+  padding: 20px;
+ 
+}
+
+
+.cardBox-2{
+  background:#E4CB20;
+
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+.cardBox-3{
+  background:#403973;
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+
+}
+/* start welcome animation */
+
+body.welcome {
+  background: #F3F3FF;
+  overflow-y: auto;
+  overflow-x: hidden; 
+  -webkit-font-smoothing: antialiased;
+}
+
+.welcome .splash {
+  height: 0px;
+  padding: 0px;
+  border: 130em solid #EFEB84;
+  position: fixed;
+  left: 50%;
+  top: 100%;
+  display: block;
+  box-sizing: initial;
+  overflow: hidden;
+
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+}
+
+.welcome #welcome {
+  background: #311b92 ; /*bolinha*/
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow-y: auto;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
+}
+
+   /*footer*/
+   footer{
+    height: 100px;
+   }
+   
+/* moveIn */
+
+.welcome header,
+.welcome a.btn {
+  opacity: 0;
+  animation: moveIn 2s 3.1s ease forwards;
+}
+
+@keyframes init {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 56px;
+    height: 56px;
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes puff {
+  0% {
+    top: 100%;
+    height: 0px;
+    padding: 0px;
+  }
+  100% {
+    top: 50%;
+    height: 100%;
+    padding: 0px 100%;
+  }
+}
+
+@keyframes borderRadius {
+  0% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 0px;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    background: #311b92;
+    top: 100%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+    background: #039be5;
+  }
+}
+
+@keyframes materia {
+  0% {
+    background: #039be5;
+  }
+  50% {
+    background: #039be5;
+    top: 26px;
+  }
+  100% {
+    background: #311b92;
+    width: 100%;
+    height: 64px;
+    border-radius: 0px;
+    top: 26px;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} 
+
+
+/*exemplo animation */
+#burst-12 {
+  background: red;
+  width: 380px;
+  height: 380px;
+  position: relative;
+  text-align: center;
+  opacity: 0; /* Comece com a div invisível (opacidade 0) */
+  animation: aparecer  2s 2.9s ease forwards; /* Use a animação 'aparecer' com duração de 1 segundo */
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0; /* Comece com opacidade 0 */
+  }
+  to {
+    opacity: 1; /* Termine com opacidade 1 (totalmente visível) */
+  }
+}
+
+/*Card teste*/
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: none; /* Inicialmente, esconde os cards */
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-image {
+  display: none; /* Inicialmente, esconde as imagens */
+}
+
+.hidden {
+  display: none;
+}
+.card-image{
+  width: 200px;
+}
+
+#card1{
+background: #F6D6FE;
+}
+#card2{
+  background: #E4CB20;
+}
+
+#card3{
+  background: #9BA1DE;
+}
+
+/*Break Points*/
+@media (max-width: 899px) {
+  .text-1 h1{
+    width:300px;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .text-1 {
+
+    max-width: 300px;
+    margin-left: 20px;
+}
+.main-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  align-items: center;
+ margin: 4px;
+}
+ul {
+  display:none;
+}
+}
