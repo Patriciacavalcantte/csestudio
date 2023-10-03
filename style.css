@@ -6,7 +6,6 @@
   list-style: none;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  border: solid 1px red;
 }
 .container-total{
   max-width: 1280;
@@ -399,3 +398,4 @@ footer {
   padding: 0;
 }
 }
+
