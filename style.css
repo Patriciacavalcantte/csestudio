@@ -6,6 +6,7 @@
   list-style: none;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  border: solid 1px red;
 }
 .container-total{
   max-width: 1280;
@@ -374,5 +375,27 @@ background: #F6D6FE;
 }
 ul {
   display:none;
+}
+.container-total{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 300px;
+}
+footer {
+  width: 300px;
+}
+
+.welcome .splash {
+  padding: 0;
 }
 }
